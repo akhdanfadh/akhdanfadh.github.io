@@ -42,6 +42,8 @@ footer_text: >
   <br>Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 last_updated: true  # display last updated date at the bottom of the page
 
+enable_project_categories: true  # enable categorization of projects
+
 
 
 # -----------------------------------------------------------------------------
@@ -72,6 +74,9 @@ collections:
       layout: post
     output: true
     permalink: /news/:path/
+  projects:
+    output: true
+    permalink: /projects/:path/
 
 # In the about page
 announcements:
