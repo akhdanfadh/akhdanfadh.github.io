@@ -1,0 +1,132 @@
+<!-- Metadata, OpenGraph and Schema.org -->
+{% include metadata.liquid %}
+
+<!-- Bootstrap & MDB -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap@{{ site.bootstrap.version }}/dist/css/bootstrap.min.css"
+  integrity="{{ site.bootstrap.integrity.css }}"
+  crossorigin="anonymous">
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/mdbootstrap@{{ site.mdb.version }}/css/mdb.min.css"
+  integrity="{{ site.mdb.integrity.css }}"
+  crossorigin="anonymous">
+
+<!-- Bootstrap Table -->
+{% if page.pretty_table %}
+  <link
+    defer
+    rel="stylesheet"
+    href="https://unpkg.com/bootstrap-table@{{ site.bootstrap-table.version }}/dist/bootstrap-table.min.css">
+{% endif %}
+
+<!-- Fonts & Icons -->
+<link
+  defer
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link
+  rel="preconnect"
+  href="https://fonts.gstatic.com"
+  crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap">
+
+  <!-- Code Syntax Highlighting -->
+<link
+  defer
+  rel="stylesheet"
+  href="https://raw.githubusercontent.com/jwarby/pygments-css/master/{{ site.jekyll-pigments.light_themes }}.css"
+  media=""
+  id="highlight_theme_light">
+
+<!-- Sidebar Table of Contents -->
+{% if page.toc and page.toc.sidebar %}
+  <link
+    defer
+    href="https://cdn.rawgit.com/afeld/bootstrap-toc/v{{ site.bootstrap-toc.version }}/dist/bootstrap-toc.min.css"
+    rel="stylesheet">
+{% endif %}
+
+<!-- Styles -->
+{% if site.icon.size <= 4 %}
+  <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>{{ site.icon }}</text></svg>">
+{% elsif site.icon != blank %}
+  <link rel="shortcut icon" href="{{ site.icon | prepend: '/assets/img/' | relative_url | bust_file_cache}}">
+{% endif %}
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url | bust_css_cache }}">
+<link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+
+<!-- Dark Mode -->
+{% if site.enable_darkmode %}
+  <link
+    defer
+    rel="stylesheet"
+    href="https://raw.githubusercontent.com/jwarby/pygments-css/master/{{ site.jekyll-pigments.dark_themes }}.css"
+    media="none"
+    id="highlight_theme_dark">
+  <script src="{{ '/assets/js/theme.js' | relative_url | bust_file_cache }}"></script>
+{% endif %}
+
+<!-- GeoJSON support via Leaflet -->
+{% if page.map %}
+  <link
+    defer
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@{{ site.leaflet.version }}/dist/leaflet.css"
+    integrity="{{ site.leaflet.integrity.css }}"
+    crossorigin="">
+{% endif %}
+
+<!-- diff2html -->
+{% if page.code_diff %}
+  <link
+    defer
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/highlight.js@{{ site.highlightjs.version }}/styles/github.min.css"
+    integrity="{{ site.highlightjs.integrity.light }}"
+    crossorigin="anonymous"
+    media="screen and (prefers-color-scheme: light)">
+  <link
+    defer
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/highlight.js@{{ site.highlightjs.version }}/styles/github-dark.min.css"
+    integrity="{{ site.highlightjs.integrity.dark }}"
+    crossorigin="anonymous"
+    media="screen and (prefers-color-scheme: dark)">
+  <link
+    defer
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/diff2html@{{ site.diff2html.version }}/bundles/css/diff2html.min.css"
+    integrity="{{ site.diff2html.integrity.css }}"
+    crossorigin="anonymous">
+{% endif %}
+
+{% if page.images %}
+  <!-- Image comparison slider -->
+  {% if page.images.compare %}
+    <link
+      defer
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/img-comparison-slider@{{ site.img-comparison-slider.version }}/dist/styles.min.css">
+  {% endif %}
+  <!-- Image slider -->
+  {% if page.images.slider %}
+    <link
+      defer
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@{{ site.swiper.version }}/swiper-bundle.min.css"
+      integrity="{{ site.swiper.integrity.css }}"
+      crossorigin="anonymous">
+  {% endif %}
+{% endif %}
+
+{% if page.tikzjax %}
+  <link
+    defer
+    rel="stylesheet"
+    type="text/css"
+    href="https://tikzjax.com/v1/fonts.css">
+{% endif %}

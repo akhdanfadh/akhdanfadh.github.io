@@ -1,0 +1,383 @@
+# -----------------------------------------------------------------------------
+#
+# SITE SETTINGS
+# 
+# -----------------------------------------------------------------------------
+
+# Author
+first_name: Akhdan
+middle_name:
+last_name: Fadhilah
+email: akhdan@vision.is.tohoku.ac.jp
+
+# Website
+title: blank  # if 'blank', use full name
+description: Akhdan's portfolio website
+keywords: academic-website, portfolio  # or leave empty
+
+url: https://akhdanfadh.github.io  # base hostname & protocol for the site
+baseurl:  # subpath of the site, e.g. /blog/, leave blank for root
+lang: en
+icon: 💻️  # emoji used as the favicon or an image in /assets/img/
+
+
+
+# -----------------------------------------------------------------------------
+#
+# LAYOUT
+#
+# -----------------------------------------------------------------------------
+
+max_width: 900px
+enable_masonry: false  # automatic project cards arrangement
+
+# Navbar
+navbar_fixed: true
+enable_navbar_social: true  # display social media links in the navbar
+
+# Footer
+footer_fixed: false
+footer_text: >
+  <br>Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with modified <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
+  <br>Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+last_updated: true  # display last updated date at the bottom of the page
+
+
+
+# -----------------------------------------------------------------------------
+#
+# STYLES
+#
+# -----------------------------------------------------------------------------
+
+jekyll-pigments:  # syntax highlighting
+  light_themes: "github"
+  dark_themes: "native"
+
+enable_darkmode: true  # dark mode toggle
+enable_progressbar: true  # scrolling progress bar
+enable_math: true  # math typesetting (MathJax)
+
+
+
+# -----------------------------------------------------------------------------
+#
+# COLLECTIONS
+#
+# -----------------------------------------------------------------------------
+
+collections:
+  news:
+    defaults:
+      layout: post
+    output: true
+    permalink: /news/:path/
+
+# In the about page
+announcements:
+  enabled: true
+  scrollable: true  # adds a vertical scroll bar if there are more than 3 news items
+  limit: 5 # leave blank to include all the news in the `_news` folder
+latest_posts:
+  enabled: true
+  scrollable: true  # adds a vertical scroll bar if there are more than 3 new posts items
+  limit:  # leave blank to include all the blog posts
+
+
+
+# -----------------------------------------------------------------------------
+#
+# SOCIAL INTEGRATION
+#
+# -----------------------------------------------------------------------------
+
+blogger_url:
+dblp_url:
+discord_id:
+facebook_id:
+github_username: akhdanfadh
+gitlab_username:
+instagram_id:
+kaggle_id:
+keybase_username:
+lastfm_id:
+lattes_id:  # Brazilian Lattes CV
+linkedin_username:
+mastodon_username:  # mastodon instance+username, e.g., "instance.tld/@username"
+medium_username:
+orcid_id:
+osf_id:
+pinterest_id:
+publons_id:
+quora_username:
+research_gate_profile:
+scholar_userid:
+scopus_id:
+semanticscholar_id:
+spotify_id:
+stackoverflow_id:
+strava_userid:
+telegram_username:
+unsplash_id:
+wechat_qr:  # filename of wechat qr-code saved as an image in /assets/img/
+whatsapp_number:  # full phone number in international format: omit any zeroes, brackets, or dashes
+wikidata_id:
+wikipedia_id:  # case sensitive
+work_url:
+x_username: akhdanfadh
+youtube_id:  # youtube.com/@<youtube_id>
+zotero_username:
+
+contact_note: >
+  Feel free to drop a line via email. I'm quite active on Twitter as well.
+
+
+
+# -----------------------------------------------------------------------------
+#
+# PLUGINS SETTINGS
+#
+# -----------------------------------------------------------------------------
+
+# -----------------------------------
+# Responsive WebP Images
+# -----------------------------------
+imagemagick:
+  enabled: true  # recommended, see https://github.com/alshedivat/al-folio/issues/537
+  widths: [480, 800, 1400]  # image widths to generate
+  input_directories: ["assets/img/"]
+  input_formats: [".jpg", ".jpeg", ".png", ".tiff", ".gif"]
+  output_formats:
+    webp: "-quality 85"
+
+# Lazy loading images -> all images will add the loading="lazy" attribute.
+# This will make the site load faster, but it may not be supported in all browsers.
+# Loading attributes can be assigned to other values for specific images (options: "auto", "eager", "lazy").
+# See https://web.dev/browser-level-image-lazy-loading/ for more information.
+lazy_loading_images: true  # recommended
+
+# -----------------------------------
+# Jekyll Scholar
+# -----------------------------------
+
+# Display different badges withs stats for publications
+enable_publication_badges:
+  altmetric: false  # Altmetric badge (https://www.altmetric.com/products/altmetric-badges/)
+  dimensions: false  # Dimensions badge (https://badge.dimensions.ai/)
+  google_scholar: true  # Google Scholar badge (https://scholar.google.com/intl/en/scholar/citations.html)
+
+# -----------------------------------
+# RSS Feed
+# -----------------------------------
+# will use title and url fields
+# Take a look to https://github.com/jekyll/jekyll-feed for more customization
+
+rss_icon: false
+
+# -----------------------------------
+# Jekyll Minifier
+# -----------------------------------
+# Minifies (removing unnecessary or redundant data from code and markup in web
+# pages and script files) HTML, XML, CSS, JSON and JavaScript
+# see https://github.com/jekyll/jekyll-feed for more customization
+
+jekyll-minifier:
+  exclude: ["robots.txt"]
+  uglifier_args:
+    harmony: true
+
+# -----------------------------------
+# Jekyll Link Attributes
+# -----------------------------------
+# Automatically adds `rel` and `target` attributes to all external links on a
+# Jekyll site during the build process.
+# see https://github.com/twinsunllc/jekyll-link-attributes for more customization
+
+external_links:
+  enabled: true
+  rel: external nofollow noopener
+  target: _blank
+
+
+
+# -----------------------------------------------------------------------------
+#
+# OPTIONAL FEATURES
+#
+# -----------------------------------------------------------------------------
+
+enable_tooltips: false  # automatic tooltip links generated for each section titles on pages and posts
+enable_medium_zoom: true  # image zoom feature (as on medium.com)
+
+### Statement of ownership and authorship, helps to conform with EU GDPR
+# set to path to include impressum link in the footer, use the same path as permalink in a page
+impressum_path: 
+
+# -----------------------------------
+# Open Graph & Schema.org
+# -----------------------------------
+# Display links to the page with a preview object on social media.
+# see https://schema.org/docs/faq.html for more information
+
+serve_og_meta: false  # include Open Graph meta tags in the HTML head
+serve_schema_org: false  # include Schema.org in the HTML head
+og_image:  # site-wide (default for all links) Open Graph preview image
+
+# -----------------------------------
+# Analytics and search engine verification
+# -----------------------------------
+
+# For Google Analytics, see https://support.google.com/analytics/answer/10447272?hl=en&ref_topic=14088998&sjid=5129943941510317771-SA#zippy=%2Cgoogle-sites
+# Follow the instructions for Google Sites. You will need to create a Google Analytics property and copy the Google tag ID.
+enable_google_analytics: false
+google_analytics:  # Google Analytics measurement ID (format: G-XXXXXXXXXX)
+enable_cronitor_analytics: false  # cronitor RUM analytics
+cronitor_analytics:  # analytics site ID (format: XXXXXXXXX)
+
+# For Google Search Console, see https://support.google.com/webmasters/answer/9008080?hl=en#meta_tag_verification&zippy=%2Chtml-tag
+enable_google_verification: false  # Google Search Console verification
+google_site_verification:  # your site verification ID
+
+# For Bing Webmaster Tools, see https://www.bing.com/webmasters/help/add-and-verify-site-12184f8b
+enable_bing_verification: false  # Bing Webmaster Tools verification
+bing_site_verification:  # your site verification ID
+
+
+
+# -----------------------------------------------------------------------------
+#
+# JEKYLL CONFIGURATIONS
+#
+# -----------------------------------------------------------------------------
+
+# Handling Reading
+include: ["_pages"]
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - Gemfile
+  - LICENSE
+  - Gemfile.lock
+  - vendor/
+
+# Plugins
+plugins:
+  - jekyll-archives
+  - jekyll-email-protect
+  - jekyll-feed
+  - jekyll-get-json
+  - jekyll-imagemagick
+  - jekyll-jupyter-notebook
+  - jekyll-link-attributes
+  - jekyll-minifier
+  - jekyll-paginate-v2
+  - jekyll/scholar
+  - jekyll-sitemap
+  - jekyll-toc
+  - jekyll-twitter-plugin
+  - jemoji
+
+# Markdown and syntax highlight
+markdown: kramdown
+highlighter: rouge
+kramdown:  # see https://jekyllrb.com/docs/configuration/markdown/
+  input: GFM
+  syntax_highlighter_opts:
+    css_class: "highlight"
+    span:
+      line_numbers: false
+    block:
+      line_numbers: false
+      start_line: 1
+
+# Sitemap settings
+defaults:  # see https://jekyllrb.com/docs/configuration/front-matter-defaults/
+  - scope:
+      path: "assets"
+    values:
+      sitemap: false
+
+# Sass/SCSS options
+sass:  # see https://jekyllrb.com/docs/configuration/sass/
+  style: compressed
+
+
+
+# -----------------------------------------------------------------------------
+#
+# CSS/JS LIBRARY VERSIONS
+#
+# -----------------------------------------------------------------------------
+
+bootstrap:
+  version: "4.6.2"
+  integrity: 
+    css: "sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+    js: "sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+bootstrap-table:
+  version: "1.22.1"
+bootstrap-toc:
+  version: "1.0.1"
+chartjs:
+  version: "4.4.1"
+d3:
+  version: "7.8.5"
+  integrity: "sha256-1rA678n2xEx7x4cTZ5x4wpUCj6kUMZEZ5cxLSVSFWxw="
+diff2html:
+  version: "3.4.47"
+  integrity:
+    css: "sha256-IMBK4VNZp0ivwefSn51bswdsrhk0HoMTLc2GqFHFBXg="
+    js: "sha256-eU2TVHX633T1o/bTQp6iIJByYJEtZThhF9bKz/DcbbY="
+echarts:
+  version: "5.4.3"
+  integrity:
+    library: "sha256-EVZCmhajjLhgTcxlGMGUBtQiYULZCPjt0uNTFEPFTRk="
+    dark_theme: "sha256-UmFIP/4VvOqBDIl2QWl1HBuAJ1XWs/iFZxT5yJRZOKo="
+highlightjs:
+  version: "11.9.0"
+  integrity:
+    light: "sha256-Oppd74ucMR5a5Dq96FxjEzGF7tTw2fZ/6ksAqDCM8GY="
+    dark: "sha256-nyCNAiECsdDHrr/s2OQsp5l9XeY2ZJ0rMepjCT2AkBk="
+imagesloaded:
+  version: "5.0.0"
+  integrity: "sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc="
+img-comparison-slider:
+  version: "8.0.6"
+jquery:
+  version: "3.5.1"
+  integrity: "sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+leaflet:
+  version: "1.9.4"
+  integrity:
+    css: "sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    js: "sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+masonry:
+  version: "4.2.2"
+  integrity: "sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI="
+mathjax:
+  version: "3.2.0"
+mdb:
+  version: "4.20.0"
+  integrity:
+    css: "sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw="
+    js: "sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA="
+medium_zoom:
+  version: "1.1.0"
+  integrity: "sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc="
+mermaid:
+  version: "10.7.0"
+  integrity: "sha256-TtLOdUA8mstPoO6sGvHIGx2ceXrrX4KgIItO06XOn8A="
+swiper:
+  version: "11.0.5"
+  integrity:
+    css: "sha256-yUoNxsvX+Vo8Trj3lZ/Y5ZBf8HlBFsB6Xwm7rH75/9E="
+    js: "sha256-BPrwikijIybg9OQC5SYFFqhBjERYOn97tCureFgYH1E="
+vega:
+  version: "5.27.0"
+  integrity: "sha256-Yot/cfgMMMpFwkp/5azR20Tfkt24PFqQ6IQS+80HIZs="
+vega-embed:
+  version: "6.24.0"
+  integrity: "sha256-FPCJ9JYCC9AZSpvC/t/wHBX7ybueZhIqOMjpWqfl3DU="
+vega-lite:
+  version: "5.16.3"
+  integrity: "sha256-TvBvIS5jUN4BSy009usRjNzjI1qRrHPYv7xVLJyjUyw="
