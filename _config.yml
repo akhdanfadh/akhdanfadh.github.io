@@ -29,7 +29,7 @@ icon: 💻️  # emoji used as the favicon or an image in /assets/img/
 # -----------------------------------------------------------------------------
 
 max_width: 900px
-enable_masonry: false  # automatic project cards arrangement
+enable_masonry: true  # automatic project cards arrangement
 
 # Navbar
 navbar_fixed: true
