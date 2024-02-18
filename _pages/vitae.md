@@ -68,29 +68,29 @@ Interdisciplinary annual conferences on machine learning or computer graphics
 
 **President** @ [Keluarga Muslim Indonesia Sendai](https://www.instagram.com/kmisendai/) _(Jun 2021 - Sep 2022)_ <br>
 A friendly community for Indonesian muslim citizens in Sendai
-  - Managed executive board to oversee progress in essential parts of the community
-  - Led organization of 25+ members to work towards goals that improve and promote community service, Islamic academics and activities
+  <!-- - Managed executive board to oversee progress in essential parts of the community -->
+  <!-- - Led organization of 25+ members to work towards goals that improve and promote community service, Islamic academics and activities -->
 
 **Supervisory Committee** @ [Badan Pengawas PPI Jepang](https://www.facebook.com/bp.ppijepang/) _(Sep 2020 - Sep 2021)_ <br>
-A committee responsible for monitoring the performance of the Indonesian Student Association of Japan (PPIJ)
-  - Supervised all PPIJ branches in the Tohoku area
-  - Monitored PPIJ's progress report to be presented in the 2021 PPIJ Congress
+A committee responsible for monitoring the performance of the Indonesian Student Association of Japan ([PPI Jepang](https://ppijepang.org/))
+  <!-- - Supervised all PPIJ branches in the Tohoku area -->
+  <!-- - Monitored PPIJ's progress report to be presented in the 2021 PPIJ Congress -->
 
 **Design Team Coordinator** @ [Hult Prize Tohoku University](https://www.facebook.com/hultprizetohoku/) _(Oct 2020 - Jan 2021)_ <br>
-A prominent business idea competition for university students to solve the world’s most pressing challenges
-  - Accountable for designing the event's poster using CorelDRAW
-  - Helped the marketing team by creating visuals for website and social media posts
+A prominent business idea competition for Tohoku University's students
+  <!-- - Accountable for designing the event's poster using CorelDRAW -->
+  <!-- - Helped the marketing team by creating visuals for website and social media posts -->
 
-**Design Team Coordinator** @ [TEDxTohokuUniversity](https://www.tedxtohokuu.com/) _(Nov 2019 - Dec 2020)_ <br>
-A student club focused on organizing various [TED](https://www.ted.com/)-like events, such as talks or workshops
-  - Managed a group of 4 people to design the event's logo, poster, and pamphlet
-  - Helped the community outreach team by creating visuals for website and social media posts
-  - Created a promotional video and 8 individual speaker's introduction for the event
+**Design Team Coordinator** @ [TEDxTohokuUniversity](https://www.facebook.com/tedxtohokuuniversity/) _(Nov 2019 - Dec 2020)_ <br>
+A student club focused on organizing various [TED](https://www.ted.com/)-like events (talks or workshops)
+  <!-- - Managed a group of 4 people to design the event's logo, poster, and pamphlet -->
+  <!-- - Helped the community outreach team by creating visuals for website and social media posts -->
+  <!-- - Created a promotional video and 8 individual speaker's introduction for the event -->
 
-**Graphic Designer** @ [Persatuan Pelajar Indonesia Jepang](https://site.ppijepang.org/) _(Dec 2019 - Sep 2020)_ <br>
-A non-profit organization for Indonesian student in whole Japan
-  - Designed the layout and visuals for magazines published in [1](https://issuu.com/ppijepang/docs/majalah_interaksi_winter_2020_edition), [2](https://issuu.com/ppijepang/docs/interaksi_spring2020__1_), and [3](https://issuu.com/ppijepang/docs/majalah_interaksi_summer_2020)
-  - Helped social media team by creating visuals for PPIJ's social media posts
+**Graphic Designer** @ [Persatuan Pelajar Indonesia Jepang](https://ppijepang.org/) _(Dec 2019 - Sep 2020)_ <br>
+A non-profit organization for Indonesian students in Japan nation-wide
+  <!-- - Designed the layout and visuals for magazines published in [1](https://issuu.com/ppijepang/docs/majalah_interaksi_winter_2020_edition), [2](https://issuu.com/ppijepang/docs/interaksi_spring2020__1_), and [3](https://issuu.com/ppijepang/docs/majalah_interaksi_summer_2020) -->
+  <!-- - Helped social media team by creating visuals for PPIJ's social media posts -->
 
 
 
