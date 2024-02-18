@@ -175,6 +175,23 @@ enable_publication_badges:
 rss_icon: false
 
 # -----------------------------------
+# Giscus Comments
+# -----------------------------------
+# Follow instructions on https://giscus.app/ to setup the information below
+giscus:
+  repo: akhdanfadh/akhdanfadh.github.io
+  repo_id: R_kgDOLURoQg # leave empty or specify repo_id
+  category: "Page Comments"  # name of the category under which discussions will be created
+  category_id: DIC_kwDOLURoQs4CdUm-  # leave empty or specify category_id
+  mapping: title  # identify discussions by post title
+  strict: 1  # use strict identification mode
+  reactions_enabled: 1  # enable emoji reactions
+  input_position: bottom  # whether to display input form below (bottom) or above (top) the comments
+  theme: preferred_color_scheme  # color scheme (preferred works well with al-folio light/dark mode)
+  emit_metadata: 0  # discussion metadata will be sent periodically to the parent window (the embedding page)
+  lang: en
+
+# -----------------------------------
 # Jekyll Minifier
 # -----------------------------------
 # Minifies (removing unnecessary or redundant data from code and markup in web
